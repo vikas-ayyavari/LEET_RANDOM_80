@@ -1,5 +1,4 @@
 //20. Valid Parentheses
-
 class Solution {
     public boolean isValid(String s) {
         char[] res = new char[s.length()];
