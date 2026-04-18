@@ -1,0 +1,14 @@
+//3783. Mirror Distance of an Integer
+class Solution {
+    public int mirrorDistance(int n) {
+        int original = n;
+        int reversed = 0;
+
+        while (n > 0) {
+            reversed = reversed * 10 + n % 10;
+            n /= 10;
+        }
+
+        return Math.abs(original - reversed);
+    }
+}
